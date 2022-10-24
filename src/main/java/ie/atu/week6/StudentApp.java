@@ -7,14 +7,18 @@ public class StudentApp {
         System.out.println("Please enter your name: ");
         Scanner input = new Scanner(System.in);
         String name = input.nextLine();
-        System.out.println("Your name is: " + name);
+        Student first_Student = new Student();
+        first_Student.setName(name);
+        System.out.println("Your name is: " + first_Student.getName());
 
         System.out.println("Please enter your email: ");
         String eMail = input.nextLine();
-        System.out.println("Your email is: " + eMail);
+        first_Student.seteMail(eMail);
+        System.out.println("Your email is: " + first_Student.geteMail());
 
         System.out.println("Please enter your course: ");
         String myCourse = input.nextLine();
-        System.out.println("Your course is: " + myCourse);
+        first_Student.setMyCourse(myCourse);
+        System.out.println("Your course is: " + first_Student.getMyCourse());
     }
 }
