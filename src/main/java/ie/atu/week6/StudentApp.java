@@ -21,10 +21,10 @@ public class StudentApp {
         first_Student.setMyCourse(myCourse);
         System.out.println("Your course is: " + first_Student.getMyCourse());
 
-
+        Student second_Student = new Student();
         System.out.println("Please enter the name for second student: ");
         String name2 = input.nextLine();
-        Student second_Student = new Student();
+        second_Student.setName(name2);
         System.out.println("You entered: " + second_Student.getName());
 
         System.out.println("Please enter the 2nd email: ");
