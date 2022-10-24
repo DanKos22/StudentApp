@@ -5,9 +5,28 @@ public class Student {
     private String eMail;
     private String myCourse;
 
+    public Student() {
+        this.name = name;
+        this.eMail = eMail;
+        this.myCourse = myCourse;
+    }
+
+    public Student(String name) {
+        this.name = name;
+    }
+
+    public Student(String name, String eMail, String myCourse) {
+        this.name = name;
+        this.eMail = eMail;
+        this.myCourse = myCourse;
+    }
+
+
     public String getName() {
         return name;
     }
+
+
 
     public void setName(String name) {
         this.name = name;
