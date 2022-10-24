@@ -33,9 +33,14 @@ public class StudentApp {
         System.out.println("You entered: " + second_Student.geteMail());
 
         System.out.println("Please enter the 2nd course: ");
-        String course2 = input.nextLine();
-        second_Student.setMyCourse(course2);
+        String myCourse2 = input.nextLine();
+        second_Student.setMyCourse(myCourse2);
         System.out.println("You entered: " + second_Student.getMyCourse());
+
+        Student third_Student = new Student(Mike, hms.uss.ie, computer science);
+        System.out.println("You entered for name: " + third_Student.getName());
+        System.out.println("You entered for email: " + third_Student.geteMail());
+        System.out.println("You entered for course: " + third_Student.getMyCourse());
 
 
     }
