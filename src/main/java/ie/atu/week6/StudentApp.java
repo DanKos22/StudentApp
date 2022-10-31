@@ -22,23 +22,36 @@ public class StudentApp {
         first_Student.setMyCourse(myCourse);
         System.out.println("Your course is: " + first_Student.getMyCourse());
 
-        // Second instance of Student class
-        Student second_Student = new Student("John");
-        System.out.println("Name of the second student is: " + second_Student.getName());
+        // Information for the second student
+        System.out.println("Please enter the name for the second student: ");
+        String name2 = input.nextLine();
 
         System.out.println("Please enter the 2nd email: ");
         String eMail2 = input.nextLine();
-        second_Student.seteMail(eMail2);
-        System.out.println("Email for 2nd student is: " + second_Student.geteMail());
 
         System.out.println("Please enter the 2nd course: ");
         String myCourse2 = input.nextLine();
+        // Second instance of Student class
+        Student second_Student = new Student(name2);
+        second_Student.seteMail(eMail2);
         second_Student.setMyCourse(myCourse2);
-        System.out.println("Course for the 2nd student: " + second_Student.getMyCourse());
+        System.out.println("Name of the second student is: " + second_Student.getName());
+        System.out.println("Email of the second student is: " + second_Student.geteMail());
+        System.out.println("Course of the second student is: " + second_Student.getMyCourse());
 
-        Student third_Student = new Student("Mike", "G00222444@atu.ie", "Computer science");
-        System.out.println("Name of the 3rd student is: " + third_Student.getName());
-        System.out.println("Email of the 3rd student is: " + third_Student.geteMail());
-        System.out.println("Course of the 3rd student is: " + third_Student.getMyCourse());
+        System.out.println("Please enter the name of the third student: ");
+        String name3 = input.nextLine();
+
+        System.out.println("Please enter the email of the 3rd student: ");
+        String eMail3 = input.nextLine();
+
+        System.out.println("Please enter the course of the 3rd student: ");
+        String myCourse3 = input.nextLine();
+
+        // Third object
+        Student third_Student = new Student(name3, eMail3, myCourse3);
+        System.out.println("Name of the third student is: " + second_Student.getName());
+        System.out.println("Email of the third student is: " + second_Student.geteMail());
+        System.out.println("Course of the third student is: " + second_Student.getMyCourse());
     }
 }
