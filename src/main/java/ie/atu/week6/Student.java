@@ -5,14 +5,19 @@ public class Student {
     private String eMail;
     private String myCourse;
 
+    // Default constructor
     public Student() {
-        this.name = name;
-        this.eMail = eMail;
-        this.myCourse = myCourse;
+        name = "";
+        eMail = "";
+        myCourse = "";
     }
 
+    // Constructor for the second student
     public Student(String name) {
+
         this.name = name;
+        eMail = "";
+        myCourse = "";
     }
 
     public Student(String name, String eMail, String myCourse) {
